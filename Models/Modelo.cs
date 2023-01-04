@@ -8,9 +8,9 @@ public record Modelo {
 
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id =default!;
+    public int Id {get;set;}
 
     [Required(ErrorMessage = "Nome é obrigatório")]
     [Column("name", TypeName = "varchar(100)")]
-    public string name = default!;
+    public string Nome {get;set;} = default!;
 }

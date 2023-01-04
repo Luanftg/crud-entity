@@ -2,7 +2,7 @@
 using crud_entity.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace crud_entity.DBContexto;
+namespace crud_entity.Contexto;
 
 public class DbContexto : DbContext
 {

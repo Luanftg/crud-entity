@@ -1,28 +1,32 @@
-namespace crud_entity.Models;
-
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
+namespace crud_entity.Models;
+
+
 
 [Table("cliente")]
 public record Cliente {
 
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id =default!;
+    public int Id {get;set;}
 
     [Required(ErrorMessage = "Nome é obrigatório")]
     [Column("nome", TypeName = "varchar(100)")]
-    public string name = default!;
+    public string Nome {get;set;} = default!;
 
-    [Required(ErrorMessage = "email da marca é obrigatório")]
-    public string email =default!;
+    [Required(ErrorMessage = "Email da marca é obrigatório")]
+    [Column("email", TypeName = "varchar(100)")]
+    public string Email {get;set;} = default!;
     
     [Required(ErrorMessage = "Telefone da marca é obrigatório")]
-    public string telefone =default!;
+    [Column("telefone", TypeName = "varchar(100)")]
+    public string Telefone {get;set;} =default!;
     
     [Required(ErrorMessage = "Endereço da marca é obrigatório")]
     [Column("endereco", TypeName = "text")]
-    public string endereco =default!;
+    public string Endereco {get;set;} = default!;
    
 
 }

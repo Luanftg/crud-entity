@@ -7,9 +7,9 @@ public record Configuracao {
 
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id =default!;
+    public int Id {get;set;}
 
     [Required(ErrorMessage = "Dias de locação é obrigatório")]
     [Column("diasLocacao", TypeName = "int")]
-    public int diasLocacao = default!;
+    public int DiasLocacao {get;set;} = default!;
 }

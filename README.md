@@ -24,7 +24,8 @@
 10. Instalar o dotnet Entity Framework
 11. Criar as Migrations
 12. Executa as Migration com update database
-13.  Instalar o pacote EF Design
-14.  Instalar pacoteSql_Server
-15.  Instalar o `dotnet tool install -g dotnet-aspnet-codegenerator`
-16.  Executar o Scafold para cada modelo
+13. Instalar o pacote EF Design
+14. Instalar pacoteSql_Server
+15. Instalar o `dotnet tool install -g dotnet-aspnet-codegenerator`
+16. Executar o Scafold para cada modelo
+17. Referenciar na Home um `link` para a view criada pelo Scafold `asp-controller asp-action`

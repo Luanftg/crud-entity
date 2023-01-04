@@ -1,4 +1,5 @@
-using crud_entity.DBContexto;
+
+using crud_entity.Contexto;
 using Microsoft.EntityFrameworkCore;
 
 namespace crud_entity;

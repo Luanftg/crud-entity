@@ -1,6 +1,3 @@
-
-
-// forma (dotnet 3, 5, 6 e 7)
 using crud_entity;
 
 public class Program

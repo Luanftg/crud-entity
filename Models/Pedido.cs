@@ -8,26 +8,24 @@ public record Pedido {
 
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id =default!;
+    public int Id {get;set;}
 
     [Required(ErrorMessage = "Id do carro é obrigatório")]
     [Column("carroId", TypeName = "int")]
-    public string carroId = default!;
+    public int CarroId {get;set;}= default!;
 
     [Required(ErrorMessage = "Id do cliente é obrigatório")]
-     [Column("clienteId", TypeName = "int")]
-
-    public int clienteId =default!;
+    [Column("clienteId", TypeName = "int")]
+    public int ClienteId {get;set;} =default!;
     
      [Required(ErrorMessage = "Data de locação é obrigatório")]
      [Column("dataLocacao", TypeName = "DATETIME")]
 
-    public DateTime dataLocacao =default!;
+    public DateTime DataLocacao {get;set;} = default!;
     
     [Required(ErrorMessage = "Data de entrega é obrigatório")]
      [Column("dataEntrega", TypeName = "DATETIME")]
-
-    public DateTime dataEntrega =default!;
+    public DateTime DataEntrega {get;set;} =default!;
 
 
 }
